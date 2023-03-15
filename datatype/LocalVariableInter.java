@@ -1,6 +1,6 @@
 package datatype;
 
-public class LocalBariableInter {
+public class LocalVariableInter {
 
     public static void main(String[] args){
         var i = 10;
