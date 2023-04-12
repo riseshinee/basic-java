@@ -2,7 +2,7 @@ package objectOriented.employee;
 
 public class Employee {
     //인스턴스에서 공통으로 사용함
-    public static int serialNum = 1000;
+    private static int serialNum = 1000;
 	
 	private int employeeId;
 	private String employeeName;
@@ -13,6 +13,21 @@ public class Employee {
         serialNum++;
         employeeId = serialNum;
     }
+
+    //static 메서드는 인스턴스 생성과 무관하게 클래스 이름으로 호출 될 수 있음
+    //인스턴스 생성 전에 호출 될 수 있으므로 static 메서드 내부에서는 인스턴스 변수를 사용할 수 없음
+    public static void setSerialNum(int serialNum) {
+		int i = 0;
+		
+		employeeName = "Lee";  //오류발생
+		Employee.serialNum = serialNum;
+	}
+
+    
+    public int getSerialNum(){
+        return serialNum;
+    }
+
 	public int getEmployeeId() {
 		return employeeId;
 	}
