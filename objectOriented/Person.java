@@ -16,7 +16,7 @@ public class Person {
 	
 	public Person getPerson() {
 		return this;
-	}
+	} //objectOriented.Person@36aa7bc2 인스턴스 주소가 출력됨
 	
 	
 	public static void main(String[] args)
