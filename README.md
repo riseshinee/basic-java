@@ -1,4 +1,5 @@
-## basic java
+## Basic java
+
 #### 자바 기초 by fastcampus
 
 ## Language
